@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        //Add your data from getFactualResults method to bundle
         Uri selectedImage = savedInstanceState.getParcelable("image");
         if(selectedImage!=null){
             setUri(selectedImage);
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        //Add your data from getFactualResults method to bundle
         outState.putParcelable("image", getUri());
         super.onSaveInstanceState(outState);
     }
@@ -99,18 +97,6 @@ public class MainActivity extends AppCompatActivity {
                     imageView.setImageURI(getUri());// To display selected image in image view
                     sendEmailBt.setEnabled(true);
                 }
-        }
-    }
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        // Checks the orientation of the screen
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show();
-        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
-            Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
         }
     }
 
