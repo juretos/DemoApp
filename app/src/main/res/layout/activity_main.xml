@@ -32,7 +32,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="Select Picture"
+            android:text="@string/select_pic"
             android:onClick="selectPhoto"
             android:layout_gravity="center"></Button>
         <Button
@@ -40,7 +40,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
-            android:text="SEND EMAIL"
+            android:text="@string/send_email"
             android:onClick="sendEmail"
             android:enabled="false"
             android:layout_gravity="center"></Button>

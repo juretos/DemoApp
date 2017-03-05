@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory >
+        <EditTextPreference
+            android:defaultValue="@string/def_email"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/enter_email"
+            android:key="email" />
+    </PreferenceCategory>
+</PreferenceScreen>
